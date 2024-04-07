@@ -29,11 +29,7 @@ fetch('https://hp-api.lainocs.fr/characters')
                 <h2>${character.name}</h2>
                 <img src="${character.image}" alt="${character.name}">
                 <p>Maison : ${character.house}</p>
-                <p>Patronus : ${character.patronus}</p>
-            `
+                <p>Patronus : ${character.patronus}</p>`
             cardsContainer.appendChild(card)
         })
-    })
-    .catch(error => {
-        console.error('Une erreur s\'est produite lors de la récupération des données :', error)
     })
